@@ -1,25 +1,110 @@
-<div style="position:relative; display:inline-block;">
+<!DOCTYPE html>
+<html>
 
-<input 
-id="search" 
-placeholder="example: paint" 
-oninput="showSuggestions()"
-autocomplete="off"
->
+<head>
+<title>GTA Crafting Recipes</title>
 
-<div id="suggestions" style="
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:40px;
+}
+
+h1{
+font-size:40px;
+}
+
+.search-box{
+position:relative;
+width:300px;
+margin:auto;
+}
+
+#search{
+width:100%;
+padding:12px;
+border-radius:6px;
+border:none;
+font-size:16px;
+}
+
+#suggestions{
 position:absolute;
+top:45px;
+left:0;
+width:100%;
 background:white;
 color:black;
-width:300px;
-text-align:left;
 border-radius:4px;
+display:none;
 max-height:200px;
 overflow-y:auto;
-display:none;
 z-index:1000;
-"></div>
+}
+
+.suggest-item{
+padding:10px;
+cursor:pointer;
+}
+
+.suggest-item:hover{
+background:#eee;
+}
+
+button{
+margin-top:10px;
+padding:12px 20px;
+border:none;
+background:#22c55e;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#16a34a;
+}
+
+#result{
+margin-top:40px;
+font-size:18px;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>GTA Crafting Recipe Finder</h1>
+
+<div class="search-box">
+
+<input
+id="search"
+placeholder="Type item name..."
+autocomplete="off"
+onkeyup="showSuggestions()"
+>
+
+<div id="suggestions"></div>
 
 </div>
 
 <button onclick="findRecipe()">Search</button>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
