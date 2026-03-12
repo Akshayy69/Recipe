@@ -1,0 +1,248 @@
+{
+  "peppermint_extract": [
+    "4x sugar"
+  ],
+  "weapon_wrench": [
+    "1x weapon_crowbar"
+  ],
+  "tungsten_ore": [
+    "2x tungsten_nugget"
+  ],
+  "titanium_nugget": [
+    "4x titanium_ore"
+  ],
+  "rusty_cannon_ball": [
+    "1x rusty_gear"
+  ],
+  "copper_crumb": [
+    "2x scrap_metal"
+  ],
+  "copper_nugget": [
+    "1x zinc"
+  ],
+  "polymer_resin": [
+    "2x glass"
+  ],
+  "steel": [
+    "1-3x scrap_metal"
+  ],
+  "breadcrumbs": [
+    "1x chicken_breast"
+  ],
+  "patty": [
+    "1x lettuce"
+  ],
+  "cheese": [
+    "1x lettuce"
+  ],
+  "grilled_bacon": [
+    "1x burger_buns"
+  ],
+  "burger_buns": [
+    "4x lettuce"
+  ],
+  "sheet_metal": [
+    "2x scrap_metal"
+  ],
+  "rubber": [
+    "2x scrap_metal"
+  ],
+  "water": [
+    "1x cocaine_bag"
+  ],
+  "weed_1q": [
+    "1x vape"
+  ],
+  "wood": [
+    "1x acetone"
+  ],
+  "smg_lower_receiver": [
+    "3-5x scrap_metal"
+  ],
+  "shotgun_upper_receiver": [
+    "3-5x scrap_metal"
+  ],
+  "rifle_lower_receiver": [
+    "4-7x scrap_metal"
+  ],
+  "steel_filings": [
+    "1x scrap_metal"
+  ],
+  "tungsten_plate": [
+    "1x steel_tube"
+  ],
+  "titanium_rod": [
+    "1x sheet_metal"
+  ],
+  "aluminium_rod": [
+    "1x glass"
+  ],
+  "screws": [
+    "1x spring"
+  ],
+  "aluminium_plate": [
+    "2x fibreglass_resin"
+  ],
+  "muzzle_brake": [
+    "1x copper_wire"
+  ],
+  "scrap_metal": [
+    "1x weapon_knuckle"
+  ],
+  "nilx": [
+    "nilx weapon_knuckle"
+  ],
+  "basic_repair_kit": [
+    "1x gasoline_bottle"
+  ],
+  "aluminium_powder": [
+    "3x iron_oxide"
+  ],
+  "wires": [
+    "1x screen"
+  ],
+  "radio": [
+    "1x radio_chop_shop"
+  ],
+  "battery_pack": [
+    "2x knob"
+  ],
+  "antenna": [
+    "1x battery_pack"
+  ],
+  "photo_camera": [
+    "1x battery_pack"
+  ],
+  "sd_card": [
+    "1x cpu"
+  ],
+  "pcb_board": [
+    "1x sd_card"
+  ],
+  "nilx decryption_key_blue": [
+    "nilx decryption_key_red"
+  ],
+  "decryption_key_green": [
+    "1x decryption_key_red"
+  ],
+  "power_saw": [
+    "1x weapon_pumpshotgun"
+  ],
+  "cocoa_powder": [
+    "1x weed_1oz"
+  ],
+  "jolly_ranchers": [
+    "1x weed_1oz"
+  ],
+  "sapphire_dust": [
+    "1x paint_brush"
+  ],
+  "high_quality_paint": [
+    "1x gold_dust"
+  ],
+  "shotgun_ammo": [
+    "1x scrap_metal"
+  ],
+  "ammonia": [
+    "1x bleach"
+  ],
+  "pearl_ring": [
+    "onyx_ring |"
+  ],
+  "pearl": [
+    "1x morganite |"
+  ],
+  "green_apple": [
+    "1x antibiotics"
+  ],
+  "basic_lockpick": [
+    "2x advanced_lockpick"
+  ],
+  "weapon_snowball": [
+    "1x acid"
+  ],
+  "pvc_pipe": [
+    "1x pcb_board"
+  ],
+  "projectile": [
+    "1x casing"
+  ],
+  "lighter": [
+    "1x empty_box"
+  ],
+  "brass": [
+    "1x scrap_metal"
+  ],
+  "casing": [
+    "1x gunpowder"
+  ],
+  "mango": [
+    "1x sugar"
+  ],
+  "strawberry": [
+    "1x sugar"
+  ],
+  "green_tea_bag": [
+    "1x sugar"
+  ],
+  "fish_filets": [
+    "1x eggs"
+  ],
+  "soy_sauce": [
+    "1x fish_filets"
+  ],
+  "cabbage": [
+    "1x fish_filets"
+  ],
+  "fish_sauce": [
+    "2x cabbage"
+  ],
+  "yeast_packet": [
+    "1x flour"
+  ],
+  "tomato_sauce": [
+    "1x pizza_dough"
+  ],
+  "lemon": [
+    "1x eggs"
+  ],
+  "milk": [
+    "1x water"
+  ],
+  "coffee_beans": [
+    "1x water"
+  ],
+  "processed_metal": [
+    "1x scrap_metal"
+  ],
+  "tempered_glass": [
+    "1x glass"
+  ],
+  "sugar": [
+    "1x angostura_bitters"
+  ],
+  "sprunk": [
+    "1x rum"
+  ],
+  "pineapple": [
+    "1x rum"
+  ],
+  "orange": [
+    "2x lime"
+  ],
+  "salt": [
+    "1x tomato_juice"
+  ],
+  "cherry": [
+    "1x grenadine"
+  ],
+  "chicken_patty": [
+    "1x lettuce"
+  ],
+  "ice_cream_cone": [
+    "1x milk"
+  ],
+  "chicken_wings_raw": [
+    "1x hot_sauce"
+  ]
+}
