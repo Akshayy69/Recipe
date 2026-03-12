@@ -1,44 +1,66 @@
 let recipes = {}
 
 async function loadRecipes(){
-    const res = await fetch("recipes.json")
-    recipes = await res.json()
+const res = await fetch("recipes.json")
+recipes = await res.json()
 }
 
 loadRecipes()
 
-function findRecipe(){
+function showSuggestions(){
 
 const input = document.getElementById("search").value.toLowerCase()
-const result = document.getElementById("result")
+const suggestionBox = document.getElementById("suggestions")
 
-// Exact match
-if(recipes[input]){
-
-let html = "<h2>"+input+"</h2><ul>"
-
-recipes[input].forEach(i=>{
-html += "<li>"+i+"</li>"
-})
-
-html += "</ul>"
-
-result.innerHTML = html
-
+if(input.length === 0){
+suggestionBox.style.display = "none"
 return
 }
 
-// Suggest similar
-let suggestions = Object.keys(recipes).filter(item =>
+let matches = Object.keys(recipes).filter(item =>
 item.includes(input)
 )
 
-if(suggestions.length > 0){
+if(matches.length === 0){
+suggestionBox.style.display = "none"
+return
+}
 
-let html = "<h3>Did you mean:</h3><ul>"
+let html = ""
 
-suggestions.slice(0,10).forEach(s=>{
-html += `<li onclick="selectItem('${s}')" style="cursor:pointer">${s}</li>`
+matches.slice(0,10).forEach(item=>{
+html += `<div 
+style="padding:8px; cursor:pointer;"
+onclick="selectItem('${item}')"
+onmouseover="this.style.background='#eee'"
+onmouseout="this.style.background='white'"
+>${item}</div>`
+})
+
+suggestionBox.innerHTML = html
+suggestionBox.style.display = "block"
+
+}
+
+function selectItem(item){
+
+document.getElementById("search").value = item
+document.getElementById("suggestions").style.display = "none"
+findRecipe()
+
+}
+
+function findRecipe(){
+
+const item = document.getElementById("search").value.toLowerCase()
+const result = document.getElementById("result")
+
+if(recipes[item]){
+
+let html = "<h2>"+item+"</h2><ul>"
+
+recipes[item].forEach(i=>{
+html += "<li>"+i+"</li>"
 })
 
 html += "</ul>"
@@ -50,12 +72,5 @@ result.innerHTML = html
 result.innerHTML = "Recipe not found"
 
 }
-
-}
-
-function selectItem(item){
-
-document.getElementById("search").value = item
-findRecipe()
 
 }
