@@ -1,75 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
+<div style="position:relative; display:inline-block;">
 
-<title>GTA Crafting Recipe Finder</title>
+<input 
+id="search" 
+placeholder="example: paint" 
+oninput="showSuggestions()"
+autocomplete="off"
+>
 
-<style>
-
-body{
-background:#0f172a;
-color:white;
-font-family:Arial;
-text-align:center;
-padding:40px;
-}
-
-h1{
-font-size:40px;
-}
-
-input{
-padding:12px;
+<div id="suggestions" style="
+position:absolute;
+background:white;
+color:black;
 width:300px;
-border-radius:6px;
-border:none;
-font-size:16px;
-}
+text-align:left;
+border-radius:4px;
+max-height:200px;
+overflow-y:auto;
+display:none;
+z-index:1000;
+"></div>
 
-button{
-padding:12px 20px;
-border:none;
-background:#22c55e;
-color:white;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-background:#16a34a;
-}
-
-#result{
-margin-top:40px;
-font-size:18px;
-}
-
-ul{
-list-style:none;
-padding:0;
-}
-
-li{
-padding:5px;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<h1>GTA Crafting Recipe Finder</h1>
-
-<p>Type item name</p>
-
-<input id="search" placeholder="example: paint">
+</div>
 
 <button onclick="findRecipe()">Search</button>
-
-<div id="result"></div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
